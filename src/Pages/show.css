@@ -1,0 +1,27 @@
+.show-info{
+    margin-bottom: 40px;
+}
+.show-info h1{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.show-page{
+    padding: 0 20px;
+}
+
+@media only screen and (min-width: 516px) {
+    .show-page{
+        padding: 0 40px;
+    }
+}
+@media only screen and (min-width: 516px) {
+    .show-page{
+        padding: 0 60px;
+    }
+}
+@media only screen and (min-width: 516px) {
+    .show-page{
+        padding: 0 80px;
+    }
+}

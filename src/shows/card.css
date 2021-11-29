@@ -1,0 +1,240 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 3px 1px rgb(204, 203, 203);
+    border-radius: 10px;
+    width: 240px;
+    height: 530px;
+    padding: 10px 20px;
+    margin: 20px 20px;
+    background-color: rgb(221, 219, 219);
+}
+.Card h1{
+    margin: 0px 0px;
+}
+.card-img img{
+    border-radius: 10px;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    margin: 0px 100px;
+    
+}
+.btns{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btns a{
+    text-decoration-color: #000;
+      color: #000;
+}
+.btns a:hover{
+    text-decoration-color: blue;
+        color: blue;
+}
+.btns button{
+    outline: none;
+    border: 1px solid #8e8e8e;
+    border-radius: 15px;
+    padding: 5px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.btns button:hover{
+    cursor: pointer;
+    color: gray;
+
+}
+
+
+/* ******** SHOW MAIN DATA *********   */
+
+.rating-star{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #ffc806;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+
+
+.show-main-data{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.show-main-data img{
+    min-width: 250px;
+    width: 300px;
+    max-height: 450px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.text-side{
+    margin-left: 20px;
+}
+
+.summary{
+    color: #5f5f5f;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px){
+    .body{
+        flex-wrap: wrap;
+    }
+    .show-main-data img{
+        margin-bottom: 20px;
+        margin: auto;
+    }
+    .text-side{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+.headline{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headline h1{
+    margin: 0;
+    border-right: 1px solid #ddd;
+    padding-right: 25px;
+    margin-right: 20px;
+}
+
+.headline h1{
+    display: flex;
+    align-items: center;
+}
+.headline h1 span{
+    margin-left: 10px;
+}
+
+.taglist{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.taglist span{
+    margin: 6px;
+    margin-bottom: 0;
+    color: blue;
+    background-color: #d0c9ff;
+    padding: 3px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/*********** DETAILS *************/
+
+.details-warper{
+    margin: 5px 0;
+}
+.details-warper span{
+    font-weight: bold;
+}
+
+
+/*********SEASONS***********/
+
+.season-wraper p{
+    margin: 5px 0;
+}
+
+.season-wraper span{
+    font-weight: 700;
+}
+
+.season-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.season-items{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.season-items:last-child{
+    margin-bottom: 0;
+}
+
+.left{
+    flex: 0 0 30%;
+    border-right: 1px solid #b0b0b0;
+    padding-right: 20px;
+}
+.right{
+    padding-left: 20px;
+    flex: 1;
+}
+
+
+/**************** CAST ****************/
+
+.cast-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cast-items{
+    flex: 1 0 50%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+    .cast-items{
+        flex: 1 0 100%;
+    }
+}
+
+.cast-pic-wrap{
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.cast-pic-wrap img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.actor{
+    margin-left: 25px;
+}
+
+.bold{
+    font-weight: bold;
+}
