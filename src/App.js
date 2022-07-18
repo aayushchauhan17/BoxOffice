@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react";
 // import Navbar from './components/Navbar';
-import { Switch, Route} from 'react-router-dom'
-import Home from './Pages/Home';
-import Starred from './Pages/Starred';
-import Show from './Pages/Show';
+import { Switch, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Starred from "./Pages/Starred";
+import Show from "./Pages/Show";
 
 function App() {
   return (
     <>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path="/BoxOffice">
           <Home />
         </Route>
-        <Route exact path='/starred'>
+        <Route path="/BoxOffice">
           <Starred />
         </Route>
-        <Route exact path='/show/:id'>
+        <Route path="/show/:id">
           <Show />
         </Route>
         <Route>
