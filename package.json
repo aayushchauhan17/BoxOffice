@@ -1,5 +1,6 @@
 {
   "name": "box-office",
+  "homepage": "https://aayushchauhan17.github.io/BoxOffice/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
